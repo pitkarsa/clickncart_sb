@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.demo.models.Cart;
 import com.example.demo.projections.CartProjection;
 
-@CrossOrigin(origins = {"http://localhost:3000"})
+//@CrossOrigin(origins = {"http://localhost:3000"})
 @RepositoryRestResource(excerptProjection = CartProjection.class)
 public interface CartRepository extends JpaRepository<Cart, Integer> {
 

@@ -7,7 +7,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.example.demo.models.User;
-@CrossOrigin(origins = {"http://localhost:3000"})
+//@CrossOrigin(origins = {"http://localhost:3000"})
 public interface UserRepository extends JpaRepository<User, Integer> {
 	@RestResource(exported = false)
 	public User save(User user);

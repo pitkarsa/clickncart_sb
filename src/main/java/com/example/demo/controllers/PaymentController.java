@@ -19,7 +19,7 @@ import com.example.demo.services.OrderService;
 import com.razorpay.Order;
 import com.razorpay.RazorpayClient;
 import com.razorpay.Utils;
-@CrossOrigin(origins = {"http://localhost:3000"})
+//@CrossOrigin(origins = {"http://localhost:3000"})
 @RestController
 public class PaymentController {
 

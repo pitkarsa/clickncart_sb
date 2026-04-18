@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.demo.models.Product;
 import com.example.demo.projections.ProductProjection;
 
-@CrossOrigin(origins = {"http://localhost:3000"})
+//@CrossOrigin(origins = {"http://localhost:3000"})
 @RepositoryRestResource(excerptProjection = ProductProjection.class)
 public interface ProductRepository extends 
 JpaRepository<Product, Integer>, JpaSpecificationExecutor<Product> {
