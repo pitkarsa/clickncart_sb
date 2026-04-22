@@ -7,17 +7,17 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
 public class UserDto {
-	@NotNull
+	@NotNull(message="Username is compulsory")
 	private String username;	
-	@NotNull
+	@NotNull(message="Email is compulsory")
 	private String email;	
-	@NotNull
-	@Pattern(regexp = "[0-9a-zA-Z@#_]*")
+	@NotNull(message="Password is compulsory")
+	@Pattern(regexp = "[0-9a-zA-Z@#_]*", message="Password may contain characters: 0-9a-zA-Z@#_")
 	// password ill allow alphabets(small-capital, digits 
 //	and special symbols @#_
-	@Size(min = 6, max=12) // password length (6 to 12)
+	@Size(min = 6, max=12, message="Password length must be 6 to 12") // password length (6 to 12)
 	private String password;
-	@NotNull
+	@NotNull(message = "mobile is compulsory")
 	private String mobile;
 	
 	private List<String> roles;
